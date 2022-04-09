@@ -1,0 +1,277 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-redux/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "react-redux"
+  ],
+  "rules": {
+    /********************** TEMP RULES **********************/
+    // "import/order": [
+    //     "error",
+    //     {
+    //         "groups": [
+    //             "index",
+    //             "external",
+    //             "internal",
+    //             "builtin",
+    //             "parent",
+    //             "sibling",
+    //         ],
+    //         "pathGroups": [
+    //             {
+    //                 "pattern": "~/**",
+    //                 "group": "external"
+    //             },
+    //             {
+    //                 "pattern": "~/src/**",
+    //                 "group": "internal"
+    //             },
+    //             {
+    //                 "pattern": "./**",
+    //                 "group": "sibling"
+    //             }
+    //         ]
+    //     }
+    // ],
+    // "react/jsx-sort-props": [
+    //     "error",
+    //     {
+    //         "callbacksLast": true,
+    //         "shorthandLast": true,
+    //         "ignoreCase": true,
+    //         "noSortAlphabetically": true,
+    //         "reservedFirst": true
+    //     }
+    // ],
+    /********************************************************/
+    //
+    // count eslint errors by type
+    //   ./node_modules/.bin/eslint ./src --ext .jsx --ext .js | grep error | awk '{print $NF}' | sort | uniq -c | sort -rn
+    // apply autofix
+    //   ./node_modules/.bin/eslint ./src --ext .jsx --ext .js --fix
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "quote-props": [
+      "error",
+      "consistent"
+    ],
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "ignore",
+        "prop": "ignore"
+      }
+    ],
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "instance-variables",
+          "lifecycle",
+          "everything-else",
+          "/^handle.+$/",
+          "/^render.+$/",
+          "render"
+        ],
+        "groups": {
+          "lifecycle": [
+            "displayName",
+            "propTypes",
+            "contextTypes",
+            "childContextTypes",
+            "mixins",
+            "statics",
+            "defaultProps",
+            "constructor",
+            "getDefaultProps",
+            "state",
+            "getInitialState",
+            "getChildContext",
+            "componentWillMount",
+            "UNSAFE_componentWillMount",
+            "componentDidMount",
+            "getDerivedStateFromProps",
+            "componentWillReceiveProps",
+            "UNSAFE_componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "UNSAFE_componentWillUpdate",
+            "getSnapshotBeforeUpdate",
+            "componentDidUpdate",
+            "componentDidCatch",
+            "componentWillUnmount"
+          ]
+        }
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 0,
+        "maxBOF": 0
+      }
+    ],
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none", // TODO: to fix manually (["after-used", "all", "none"])
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_env_",
+          "_version",
+          "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED"
+        ]
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "allow": [
+          "^UNSAFE_"
+        ]
+      }
+    ],
+    "react/jsx-closing-bracket-location": [
+      "error",
+      {
+        "selfClosing": "line-aligned",
+        "nonEmpty": "line-aligned" // TO_DISCUSS
+      }
+    ],
+    "no-dupe-class-members": "error",
+    "radix": [
+      "error",
+      "as-needed"
+    ],
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "ignoreDOMComponents": false,
+        "ignoreRefs": false,
+        "allowArrowFunctions": false,
+        "allowFunctions": false,
+        "allowBind": false
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-bitwise": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react-redux/prefer-separate-component-file": "off",
+    "react/no-danger": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "global-require": "off",
+    "arrow-body-style": "off", // TO_DISCUSS
+    "operator-linebreak": "off", // TO_DISCUSS
+    "max-len": "off", // TO_DISCUSS
+    "react/jsx-fragments": "off", // TO_DISCUSS
+    "prefer-destructuring": "off", // TO_DISCUSS
+    "no-shadow": "off", // TO_DISCUSS
+    "react/destructuring-assignment": "off", // TO_DISCUSS
+    "react/no-access-state-in-setstate": "off", // TO_DISCUSS
+    // TODO:
+    //   "import/order": "off",                               // TODO: define ordering rules
+    //   "react-redux/mapStateToProps-prefer-selectors": "off",  // to fix manually (after refactor to new redux flow)
+    //   "react-redux/mapDispatchToProps-returns-object": "off", // to fix manually (after refactor to new redux flow)
+    "react/forbid-prop-types": "off", // to fix manually (after refactor)
+    "react/prop-types": "off", // to fix manually (after refactor)
+    //   "react-redux/no-unused-prop-types": "off",              // to fix manually (after refactor)
+    "react/no-unused-prop-types": "off", // seems that should stay 'off'
+    "react/require-default-props": "off", // seems that should stay 'off'
+    "react/default-props-match-prop-types": "off", // seems that should stay 'off'
+    "no-restricted-globals": "off", // to fix manually (isNaN vs Number.isNaN)
+    "react/boolean-prop-naming": "off", // to fix manually (define match rule)
+    "import/no-extraneous-dependencies": "off", // to fix manually
+    // to fix manually
+    "import/no-cycle": "off",
+
+    "react/jsx-filename-extension": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    }
+    // // mark 'service/*, 'components/*',.. imports as internal module (for import ordering)
+    // "import/internal-regex": "^(service|components|redux|views|utils)\/"
+  }
+}

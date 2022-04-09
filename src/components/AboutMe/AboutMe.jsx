@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   Box,
   Container,
@@ -37,6 +37,7 @@ const CompanyLink = ({ item }) => {
       {...item.link && {
         component: 'a',
         href: item.link,
+        target: '_blank',
       }}
     >
       {item.title}
@@ -54,10 +55,14 @@ const CompanyLink = ({ item }) => {
   return title
 }
 
-const AboutMe = ({}) => {
+const AboutMe = () => {
+  useEffect(() => {
+    document.title = 'About me'
+  }, [])
+
   function getMyYearExperience() {
     const firstWorkDay = new Date(2018, 3, 9)
-    const currentDay = new Date(2022, 3, 1)
+    const currentDay = new Date()
 
     return yearDiff(currentDay, firstWorkDay)
   }

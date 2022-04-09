@@ -54,6 +54,7 @@ const SocialIcon = ({ item }) => (
   <Tooltip title={item.text}>
     <Typography
       sx={sx.social}
+      target="_blank"
       href={item.link}
       component="a"
     >

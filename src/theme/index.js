@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 const applicationTheme = createTheme({
   shape: {
@@ -24,4 +24,6 @@ applicationTheme.components = {
   ...applicationTheme.components,
 }
 
-export default applicationTheme
+const theme = responsiveFontSizes(applicationTheme)
+
+export default theme

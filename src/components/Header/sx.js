@@ -7,11 +7,12 @@ export default {
     my: 1,
     background: common.white,
   },
-  bar: {
+  bar: sx => ({
     background: common.black,
-  },
+    height: sx ? 90 : 80,
+  }),
   person: {
-    display: 'flex',
+    py: 1,
   },
   container: {
     display: 'flex',

@@ -1,12 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
+
 import {
   Box,
   Container,
-  Typography,
-  Tooltip,
   Stack,
+  Tooltip,
+  Typography,
 } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+
+import Translation from 'components/Translation'
 import { yearDiff } from 'utils/date'
+
 import sx from './sx'
 
 
@@ -25,11 +30,16 @@ const companies = [
   },
   {
     title: 'QuantaTech',
+  },
+  {
+    title: 'Freelancer',
     current: true,
   },
 ]
 
-const CompanyLink = ({ item }) => {
+function CompanyLink({ item }) {
+  const { t } = useTranslation('body')
+
   const title = (
     <Typography
       sx={sx.link(item.link, item.current)}
@@ -46,7 +56,7 @@ const CompanyLink = ({ item }) => {
 
   if (item.current) {
     return (
-      <Tooltip title="Current work">
+      <Tooltip title="Current position">
         {title}
       </Tooltip>
     )
@@ -55,80 +65,57 @@ const CompanyLink = ({ item }) => {
   return title
 }
 
-const AboutMe = () => {
+function AboutMe() {
+  const { t } = useTranslation('body')
+
   useEffect(() => {
     document.title = 'About me'
   }, [])
 
-  function getMyYearExperience() {
+  const myYearExperience = useMemo(() => {
     const firstWorkDay = new Date(2018, 3, 9)
     const currentDay = new Date()
 
     return yearDiff(currentDay, firstWorkDay)
-  }
+  }, [])
 
   return (
     <Box>
       <Box sx={sx.sectionBlack}>
-        <Container maxWidth="lg" sx={{ pt: 16 }}>
-          <Box sx={sx.content}>
-            <Typography variant="h2">
-              Software Developer
-              <br />
-              {`${getMyYearExperience()} `}
-              years of experience.
-            </Typography>
-          </Box>
-          <Box sx={sx.content}>
+        <Container maxWidth="lg" sx={sx.sectionBlack}>
+          <Stack rowGap={8}>
+            <Translation
+              t={t}
+              variant="h2"
+              text="main"
+              values={{ years: myYearExperience }}
+            />
             <Typography variant="h5">
-              I know how to handle with Front-end & Back-end.
+              {t('responsabilities')}
             </Typography>
-          </Box>
+          </Stack>
         </Container>
       </Box>
       <Box sx={sx.section}>
         <Container maxWidth="lg">
-          <Box sx={sx.content}>
-            <Typography>
-              Currenlty have strong skills in
-              <strong> JavaScript </strong>
-              and
-              <strong> Go </strong>
-              .
-              <br />
-              In addition can do something with
-              <strong> PHP </strong>
-              and
-              <strong> SQL </strong>
-              .
-            </Typography>
-          </Box>
-          <Box sx={sx.content}>
-            <Typography>
-              In past I used to work using
-              <strong> C++</strong>
-              ,
-              <strong> Java</strong>
-              ,
-              <strong> C#</strong>
-              .
-            </Typography>
-          </Box>
-          <Box sx={sx.content}>
-            <Typography>
-              A-and some techonogies I know:
-            </Typography>
-            <Typography>
-              React, React-Redux, Material-UI, Swagger, Android, Node.js, Webpack, Babel, gRPC, InfluxDB, Kapacitor, Arduino, Spring Boot
-            </Typography>
-          </Box>
+          <Stack rowGap={8}>
+            <div>
+              <Translation t={t} text="skills.hard" />
+              <Translation t={t} text="skills.soft" />
+              <Translation t={t} text="skills.past" />
+            </div>
+            <div>
+              <Translation t={t} text="skills.tech.title" />
+              <Translation t={t} text="skills.tech.list" />
+            </div>
+          </Stack>
         </Container>
       </Box>
       <Box sx={sx.sectionBlack}>
         <Container maxWidth="lg">
           <Box>
             <Typography variant="subtitle1">
-              Companies I worked in:
+              {t('companies')}
             </Typography>
             <Stack
               direction="row"

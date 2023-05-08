@@ -1,18 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { createBrowserHistory } from 'history'
+
 import { ThemeProvider } from '@mui/material/styles'
+import i18n from 'i18n'
+import ReactDOM from 'react-dom'
+import { I18nextProvider } from 'react-i18next'
 
-import applicationTheme from './theme'
 import Application from './views/Application'
-
-
-const hist = createBrowserHistory()
+import applicationTheme from './theme'
 
 ReactDOM.render((
   <ThemeProvider theme={applicationTheme}>
-    <Application history={hist} />
+    <I18nextProvider i18n={i18n}>
+      <Application />
+    </I18nextProvider>
   </ThemeProvider>
 ), document.getElementById('root'))
-
-export { hist }

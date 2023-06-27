@@ -27,6 +27,8 @@ export default {
     py: 8,
   },
   subSection: {
+    overflow: 'auto',
     pt: 8,
+    pb: 2,
   },
 }

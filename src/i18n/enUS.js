@@ -15,9 +15,12 @@ export default {
         list: 'React, React-Redux, Material-UI, Swagger, Android, Node.js, Webpack, Babel, gRPC, InfluxDB, Kapacitor, Arduino, Spring Boot',
       },
     },
-    companies: 'Companies I worked in:',
+    companies: {
+      title: 'Companies I worked in:',
+      current: 'Current position',
+    },
   },
   footer: {
-
+    title: 'Powered on React & Material-UI by Me',
   },
 }

@@ -56,7 +56,7 @@ function CompanyLink({ item }) {
 
   if (item.current) {
     return (
-      <Tooltip title="Current position">
+      <Tooltip title={t('companies.current')}>
         {title}
       </Tooltip>
     )
@@ -115,7 +115,7 @@ function AboutMe() {
         <Container maxWidth="lg">
           <Box>
             <Typography variant="subtitle1">
-              {t('companies')}
+              {t('companies.title')}
             </Typography>
             <Stack
               direction="row"

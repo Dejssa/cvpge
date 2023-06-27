@@ -9,7 +9,9 @@ export default {
   },
   bar: sx => ({
     background: common.black,
-    height: sx ? 90 : 80,
+    ...sx && {
+      height: 90,
+    },
   }),
   person: {
     py: 1,

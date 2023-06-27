@@ -17,6 +17,7 @@ const applicationTheme = createTheme({
   typography: {
     fontFamily: 'Montserrat,sans-serif',
     fontSize: 24,
+    htmlFontSize: 16,
   },
 })
 

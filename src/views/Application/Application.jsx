@@ -1,9 +1,10 @@
-import Header from 'components/Header'
-import Footer from 'components/Footer'
-import AboutMe from 'components/AboutMe'
 import React from 'react'
 
-const Application = ({}) => {
+import AboutMe from 'components/AboutMe'
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+
+function Application() {
   return (
     <>
       <Header />

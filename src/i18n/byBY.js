@@ -4,17 +4,23 @@ export default {
     position: 'Распрацоўшчык ПЗ',
   },
   body: {
-    main: 'Распрацоўшчык ПЗ <br/> {{years}} гадоў вопыту',
-    responsabilities: 'Я ствараю вэб-прыкладанні да FE і BE',
+    main: 'Праграміст (SD) <br/> {{years}} гадоў вопыту',
+    responsabilities: 'Ствараю вэб-прыкладаньні да FE ды BE',
     skills: {
-      hard: 'Зараз маю моцныя навыкі ў <b>JavaScript</b> і <b>Go</b>.',
-      soft: 'Магу стварыць магію на <b>PHP</b> і <b>SQL</b>.',
-      past: 'А ў мінулым я працаваў на <b>C++</b>, <b>Java</b>, <b>C#</b>.',
+      hard: 'Зараз маю моцныя звычкі ў <b>JavaScript</b> ды <b>Go</b>.',
+      soft: 'Ствараю магію на <b>PHP</b> ды <b>SQL</b>.',
+      past: 'Ў мінулым я працаваў выкарыстоўвая <b>C++</b>, <b>Java</b>, <b>C#</b>.',
       tech: {
-        title: 'I-і некаторыя тэхналогіі, якія ведаю:',
+        title: 'Так сама некаторыя тэхналогіі, якія ведаю:',
         list: 'React, React-Redux, Material-UI, Swagger, Android, Node.js, Webpack, Babel, gRPC, InfluxDB, Kapacitor, Arduino, Spring Boot',
       },
     },
-    companies: 'Кампаніі ў якіх працаваў:',
+    companies: {
+      title: 'Кампаніі ў якіх працаваў:',
+      current: 'Бягучая пазіцыя',
+    },
+  },
+  footer: {
+    title: 'Створана на React ды Material-UI мною',
   },
 }

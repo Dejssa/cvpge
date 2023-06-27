@@ -33,7 +33,7 @@ function LanguageSelect() {
       title: 'Бел',
       code: 'by-BY',
     }, {
-      title: 'Bel',
+      title: 'Biel',
       code: 'by-LT',
     }], [])
 

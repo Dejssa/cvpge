@@ -5,13 +5,13 @@ export default {
   },
   body: {
     main: 'Праграміст (SD) <br/> {{years}} гадоў вопыту',
-    responsabilities: 'Ствараю вэб-прыкладаньні да FE ды BE',
+    responsabilities: 'Ствараю вэб-прыкладаньні для FE і BE',
     skills: {
-      hard: 'Зараз маю моцныя звычкі ў <b>JavaScript</b> ды <b>Go</b>.',
-      soft: 'Ствараю магію на <b>PHP</b> ды <b>SQL</b>.',
-      past: 'Ў мінулым я працаваў выкарыстоўвая <b>C++</b>, <b>Java</b>, <b>C#</b>.',
+      hard: 'Зараз маю моцныя навычкі ў <b>JavaScript</b> і <b>Go</b>.',
+      soft: 'Ствараю магію на <b>PHP</b> і <b>SQL</b>.',
+      past: 'У мінулым працаваў выкарыстоўвая <b>C++</b>, <b>Java</b>, <b>C#</b>.',
       tech: {
-        title: 'Так сама некаторыя тэхналогіі, якія ведаю:',
+        title: 'Дадаткова некаторыя тэхнолёгіі, якія ведаю:',
         list: 'React, React-Redux, Material-UI, Swagger, Android, Node.js, Webpack, Babel, gRPC, InfluxDB, Kapacitor, Arduino, Spring Boot',
       },
     },

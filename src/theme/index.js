@@ -1,5 +1,6 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
+
 const applicationTheme = createTheme({
   shape: {
     borderRadius: 16,
@@ -19,6 +20,7 @@ const applicationTheme = createTheme({
     fontSize: 24,
     htmlFontSize: 16,
   },
+
 })
 
 applicationTheme.components = {

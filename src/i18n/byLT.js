@@ -1,17 +1,17 @@
 export default {
   header: {
-    name: 'Alaksej Kapura',
+    name: 'Alaksiej Kapura',
     position: 'Raspracoŭščyk PZ',
   },
   body: {
     main: 'Prahramist (SD) <br/> {{years}} hadoŭ vopytu',
-    responsabilities: 'Stvaraju veb-prykladańni da FE dy BE',
+    responsabilities: 'Stvaraju veb-prykładańni dla FE i BE',
     skills: {
-      hard: 'Zaraz maju mocnyja zvyčki ŭ <b>JavaScript</b> dy <b>Go</b>.',
-      soft: 'Stvaraju mahiju na <b>PHP</b> dy <b>SQL</b>.',
-      past: 'Ŭ minulym ja pracavaŭ vykarystoŭvaja <b>C++</b>, <b>Java</b>, <b>C#</b>.',
+      hard: 'Zaraz maju mocnyja navyčki ŭ <b>JavaScript</b> i <b>Go</b>.',
+      soft: 'Stvaraju mahiju na <b>PHP</b> i <b>SQL</b>.',
+      past: 'U minulym pracavaŭ vykarystoŭvaja <b>C++</b>, <b>Java</b>, <b>C#</b>.',
       tech: {
-        title: 'Tak sama niekatoryja technalohii, jakija viedaju:',
+        title: 'Dadatkova niekatoryja technolohii, jakija viedaju:',
         list: 'React, React-Redux, Material-UI, Swagger, Android, Node.js, Webpack, Babel, gRPC, InfluxDB, Kapacitor, Arduino, Spring Boot',
       },
     },
@@ -21,6 +21,6 @@ export default {
     },
   },
   footer: {
-    title: 'Stvorana na React dy Material-UI mnoju',
+    title: 'Stvorana na React z Material-UI mnoju',
   },
 }

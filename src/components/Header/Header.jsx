@@ -63,6 +63,12 @@ function Pages({ downMD }) {
 function Header() {
   const downMD = useMediaQuery(theme => theme.breakpoints.down('md'))
 
+  const options = [
+    {
+      label: '',
+    },
+  ]
+
   return (
     <AppBar sx={sx.bar(downMD)}>
       <Toolbar disableGutters>

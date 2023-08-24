@@ -23,6 +23,7 @@ const companies = [
   {
     title: 'NGrem',
     link: 'http://ngrem.net/',
+    current: true,
   },
   {
     title: 'Masteria',
@@ -30,10 +31,6 @@ const companies = [
   },
   {
     title: 'QuantaTech',
-  },
-  {
-    title: 'Freelancer',
-    current: true,
   },
 ]
 

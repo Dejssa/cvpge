@@ -1,4 +1,4 @@
-# Dream one Love
+# CV PAGE
 
 ## Actions
 Few actions are updating redux directly via `lodash.update`, thus it connected to BE model.

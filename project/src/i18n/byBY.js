@@ -20,6 +20,18 @@ export default {
       current: 'Бягучая пазіцыя',
     },
   },
+  projects: {
+    title: "Я займаюсь таксама рознымі асабістымі праэктамі",
+    translations: {
+      title: "Пераклады для гулен",
+      params: {
+        progress: "Поступ",
+        current: "Бягучы",
+        release: "Апублікаваны",
+        link: "Спасылкі"
+      }
+    }
+  },
   footer: {
     title: 'Створана на React ды Material-UI мною',
   },

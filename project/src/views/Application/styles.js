@@ -12,4 +12,9 @@ export default theme => ({
   updateMessageContainer: {
     backgroundColor: '#4fa745',
   },
+  content: {
+    minHeight: 'calc(100vh - 344px)',
+    marginTop: 80,
+    marginBottom: 20,
+  }
 })

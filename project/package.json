@@ -1,5 +1,5 @@
 {
-  "name": "dream-one-love",
+  "name": "dejssa-cv-page",
   "version": "0.0.1",
   "private": true,
   "main": "src/index.js",
@@ -17,7 +17,8 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-redux": "4.0.0",
-    "node-sass": "8.0.0",
+    "eslint-plugin-better-mutation": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "react-scripts": "5.0.1"
   },
   "dependencies": {
@@ -30,25 +31,21 @@
     "@mui/material": "5.12.3",
     "@mui/styles": "5.12.3",
     "classnames": "2.3.2",
-    "eslint-plugin-better-mutation": "^1.4.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
     "express": "4.18.2",
     "i18next": "22.4.15",
     "lodash": "4.17.21",
     "moment": "2.29.4",
-    "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-custom-scrollbars": "4.2.1",
     "react-dom": "18.2.0",
-    "react-i18next": "12.2.2",
+    "react-i18next": "14.1.2",
     "react-router": "6.11.1",
     "react-router-dom": "6.11.1",
-    "react-router-redux": "4.0.8",
-    "react-swipeable-views": "0.14.0"
+    "react-router-redux": "4.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --output ../",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
